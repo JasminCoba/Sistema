@@ -1,0 +1,593 @@
+<?php
+    $servidor="localhost";
+    $usuario="root";
+    $clave="";
+    $basedatos="proyecto";
+
+    $enlace = mysqli_connect($servidor, $usuario, $clave, $basedatos);
+    if(!$enlace){
+        echo"error en la base de datos";
+    }
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<meta>
+
+<head>
+    <title>APRENDE IDIOMAS</title>
+</head>
+
+<body class="masthead bg-primary">
+    <!--NAV-->
+    <header class="enca ">
+        <div class="wrapper ">
+            <div class="logo ">
+                Formulario
+            </div>
+
+            <nav>
+                <a href="index.php">Inicio</a>
+                <a href="prueba.php">Idiomas</a>
+                <a href="prueba2.php">Sobre nosotros</a>
+                <a href="prueba3.php">Contacto</a>
+                <a href="prueba4.php">Formulario</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--Formulario-->
+    <div class="margen">
+    <form action="#" class="proyecto" id="proyecto" name="proyecto" method="POST">
+        <h1 class="titu">FORMULARIO</h1>
+        <p class="formulario">
+            <font size="4"><b>Cliente</b></font>
+        </p>
+        <form action="#" class="proyecto" id="proyecto" name="proyecto" method="POST">
+        <div class="formulario">
+            <label>Nombre: </label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="formulario">
+            <label>Apellido paterno: </label>
+            <input type="text" class="form-control" id="paterno" name="paterno" required>
+        </div>
+        <div class="formulario">
+            <label>Apellido paterno: </label>
+            <input type="text" class="form-control" id="materno" name="materno" required>
+        </div>
+        <div class="formulario">
+            <label>Edad: </label>
+            <input type="text" class="form-control" id="edad" name="edad" required>
+        </div>
+
+        <div class="formulario">
+            <label>Sexo: </label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo" value="Hombre" required> Hombre
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo" value="Mujer"> Mujer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="raro" value="Raro"> Indefinido
+                </label>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------>
+        <br>
+        <p class="formulario">
+            <font size="4"><b>Contacto</b></font>
+        </p>
+        <div class="formulario">
+            <label>Correo electronico: </label>
+            <input type="text" class="form-control" id="correo" name="correo" required>
+        </div>
+
+        <div class="formulario">
+            <label>Telefono: </label>
+            <input type="text" class="form-control" id="telefono" name="telefono" required>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------>
+        
+        <br>
+        <p class="formulario">
+            <font size="4"><b>Preguntas comunes</b></font>
+        </p>
+        <div class="formulario">
+            <label>Como supo de nosotros? </label>
+            <input type="text" class="form-control" id="supo" name="supo" required>
+        </div>
+
+        <div class="formulario">
+            <label>Trabaja?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="trabaja" id="trabaja" value="Si" required> Si
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="trabaja" id="trabaja" value="No"> No
+                </label>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <label>Ha estudiado algun idioma antes?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="estudiado" id="estudiado" value="Si" required> Si
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="estudiado" id="estudiado" value="No"> No
+                </label>
+            </div>
+        </div>
+
+
+        
+        <!------------------------------------------------------------------------------------------------------------------------------------------------>
+        
+
+        <!--Encuesta-->
+        <p class="formulario">
+            <br></br>
+            <font size="4"><b>Idioma</b></font>
+        </p>
+
+        <div class="formulario">
+            <label>Cual es su idioma nativo?</label>
+            <input type="text" class="form-control" id="nativo" name="nativo" required>
+        </div>
+
+        <div class="formulario">
+            <table>
+                <label>idioma que desea aprender: </label>
+                <tr>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="Español" required> Español
+                            </label>
+                        </div>
+                    </td>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="japones"> Japones
+                            </label>
+                        </div>
+                    </td>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="aleman"> Aleman
+                            </label>
+                        </div>
+                    </td>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="noruego"> Noruego
+                            </label>
+                        </div>
+                    </td>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="portugues"> Portugues
+                            </label>
+                        </div>
+                    </td>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="chino"> Chino
+                            </label>
+                        </div>
+                    </td>
+                    <td class="celda2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="idioma" id="idioma" value="ingles"> Ingles
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="formulario">
+            <label>Objetivo a alcanzar: </label>
+            <input type="text" class="form-control" id="objetivo" name="objetivo" required>
+        </div>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+        <p class="formulario">
+            <br></br>
+            <font size="4"><b>Modalidad de estudio</b></font>
+        </p>
+
+        <div class="formulario">
+            <label>Tipo de clases: </label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipo" id="tipo" value="presencial"> Presencial
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipo" id="tipo" value="linea"> En linea
+                </label>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <label>Turno: </label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="turno" id="turno" value="Matutino"> Matutino
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="turno" id="turno" value="Vespertino"> Vespertino
+                </label>
+            </div>
+        </div>
+
+
+        <div class="formulario">
+            <label>Tipo de curso: </label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="curso" id="curso" value="Regular"> Regular
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="curso" id="curso" value="Intensivo"> Intensivo
+                </label>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------->
+        <!--Boton-->
+
+        <div class="formulario">
+            <br>
+            <input type="submit" name="guardar" class="btn" value="guardar">
+        </div> 
+        
+</form>
+    </div>
+
+<!--Fin de formulario-->
+
+
+<!--Tabla de cliente-->
+<br>
+    <div class="margen">
+    <p class="formulario" align="center">
+            <font size="4"><b>Cliente</b></font>
+        </p>
+        <div class="formulario">
+			<table>
+				<tr>
+                    <td class="borde">ID </td>
+					<td class="borde">Nombre </td>
+					<td class="borde">Apellido Paterno </td>
+					<td class="borde">Apellido Materno </td>
+					<td class="borde">Edad </td>
+                    <td class="borde">Sexo </td>
+				</tr>
+					<?php
+                    //$id=1;
+						$sql="SELECT * from cliente";
+                        $result=mysqli_query($enlace,$sql);
+
+                        while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+                            <tr>
+                            <!--<td><-?php echo $id?></td>-->
+                                <td><?php echo $mostrar['id']?></td> 
+                                <td><?php echo $mostrar['nombre']?></td>  
+                                <td><?php echo $mostrar['paterno']?></td> 
+                                <td><?php echo $mostrar['materno']?></td> 
+                                <td><?php echo $mostrar['edad']?></td> 
+                                <td><?php echo $mostrar['sexo']?></td> 
+
+                            </tr>
+                        <?php
+                        //$id++;
+                        }
+
+					?>
+						
+			</table>
+                    </div>
+    </div>
+<!--Fin de tabla cliente-->
+
+
+<!--Tabla de contacto-->
+<br>
+    <div class="margen">
+    <p class="formulario" align="center">
+            <font size="4"><b>Contacto</b></font>
+        </p>
+        <div class="formulario">
+			<table>
+				<tr>
+                    <td class="borde">ID </td>
+					<td class="borde">Correo </td>
+					<td class="borde">Contacto </td>
+				</tr>
+					<?php
+                    //$id=1;
+						$sql="SELECT * from contacto";
+                        $result=mysqli_query($enlace,$sql);
+
+                        while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+                            <tr>
+                            <!--<td><-?php echo $id?></td>-->
+                                <td><?php echo $mostrar['id']?></td> 
+                                <td><?php echo $mostrar['correo']?></td>  
+                                <td><?php echo $mostrar['telefono']?></td> 
+
+                            </tr>
+                        <?php
+                        //$id++;
+                        }
+
+					?>
+						
+			</table>
+                    </div>
+    </div>
+<!--Fin de tabla contacto-->
+
+
+<!--Tabla de preguntas-->
+<br>
+    <div class="margen">
+    <p class="formulario" align="center">
+            <font size="4"><b>Preguntas frecuentes</b></font>
+        </p>
+        <div class="formulario">
+			<table>
+				<tr>
+                    <td class="borde">ID </td>
+                    <td class="borde">como nos conocio? </td>
+					<td class="borde">Trabaja? </td>
+					<td class="borde">ha estudiado un idioma antes? </td>
+				</tr>
+					<?php
+                    //$id=1;
+						$sql="SELECT * from preguntas";
+                        $result=mysqli_query($enlace,$sql);
+
+                        while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+                            <tr>
+                            <!--<td><-?php echo $id?></td>-->
+                                <td><?php echo $mostrar['id']?></td> 
+                                <td><?php echo $mostrar['supo']?></td>  
+                                <td><?php echo $mostrar['trabaja']?></td> 
+                                <td><?php echo $mostrar['estudiado']?></td> 
+
+                            </tr>
+                        <?php
+                        //$id++;
+                        }
+
+					?>
+						
+			</table>
+                    </div>
+    </div>
+<!--Fin de tabla preguntas-->
+
+<!--Tabla de idiomas-->
+<br>
+    <div class="margen">
+    <p class="formulario" align="center">
+            <font size="4"><b>Idioma</b></font>
+        </p>
+        <div class="formulario">
+			<table>
+				<tr>
+                    <td class="borde">ID </td>
+                    <td class="borde">Lenguaje nativo </td>
+					<td class="borde">idioma a estudiar? </td>
+					<td class="borde">objetivo </td>
+				</tr>
+					<?php
+                    //$id=1;
+						$sql="SELECT * from idioma";
+                        $result=mysqli_query($enlace,$sql);
+
+                        while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+                            <tr>
+                            <!--<td><-?php echo $id?></td>-->
+                                <td><?php echo $mostrar['id']?></td> 
+                                <td><?php echo $mostrar['nativo']?></td>  
+                                <td><?php echo $mostrar['idioma']?></td> 
+                                <td><?php echo $mostrar['objetivo']?></td> 
+
+                            </tr>
+                        <?php
+                        //$id++;
+                        }
+
+					?>
+						
+			</table>
+                    </div>
+    </div>
+<!--Fin de tabla idioma-->
+
+<!--Tabla de modalidad-->
+<br>
+    <div class="margen">
+    <p class="formulario" align="center">
+            <font size="4"><b>Idioma</b></font>
+        </p>
+        <div class="formulario">
+			<table>
+				<tr>
+                    <td class="borde">ID </td>
+                    <td class="borde">Tipo de clases </td>
+					<td class="borde">Turno </td>
+					<td class="borde">Tipo de curso </td>
+				</tr>
+					<?php
+                    //$id=1;
+						$sql="SELECT * from modalidad";
+                        $result=mysqli_query($enlace,$sql);
+
+                        while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+                            <tr>
+                            <!--<td><-?php echo $id?></td>-->
+                                <td><?php echo $mostrar['id']?></td> 
+                                <td><?php echo $mostrar['tipo']?></td>  
+                                <td><?php echo $mostrar['turno']?></td> 
+                                <td><?php echo $mostrar['curso']?></td> 
+
+                            </tr>
+                        <?php
+                        //$id++;
+                        }
+
+					?>
+						
+			</table>
+                    </div>
+    </div>
+<!--Fin de tabla modalidad-->
+
+
+</body>
+</html>
+
+<!--------------------------------------------------------------------------------------------------------------->
+<!--php de cliente-->
+
+<?php	
+    if(isset($_POST['guardar'])){
+        $nombre=$_POST['nombre'];
+        $paterno=$_POST['paterno'];
+        $materno=$_POST['materno'];
+        $edad=$_POST['edad'];
+        $sexo=$_POST['sexo'];
+        
+
+
+    $insertardatos = "INSERT INTO cliente (nombre, paterno, materno, edad, sexo) VALUES('$nombre',
+     '$paterno', 
+     '$materno', 
+     '$edad', 
+     '$sexo')";
+    
+
+    $ejecutarinsertar = mysqli_query($enlace, $insertardatos);
+
+    if(!$ejecutarinsertar){
+        echo"no se subieron los datos";
+    }
+}
+
+?> 
+
+
+<!--php de contacto-->
+<?php	
+    if(isset($_POST['guardar'])){
+        $correo=$_POST['correo'];
+        $telefono=$_POST['telefono'];
+        
+
+
+    $insertardatos1 = "INSERT INTO contacto (correo, telefono) VALUES('$correo',
+     '$telefono')";
+    
+
+    $ejecutarinsertar1 = mysqli_query($enlace, $insertardatos1);
+
+    if(!$ejecutarinsertar1){
+        echo"no se subieron los datos";
+    }
+}
+
+?> 
+
+
+<!--php de preguntas-->
+<?php	
+    if(isset($_POST['guardar'])){
+        $trabaja=$_POST['trabaja'];
+        $estudiado=$_POST['estudiado'];
+        $supo=$_POST['supo'];
+        
+
+
+    $insertardatos2 = "INSERT INTO preguntas (trabaja, estudiado,supo) VALUES('$trabaja',
+     '$estudiado', '$supo')";
+    
+
+    $ejecutarinsertar2 = mysqli_query($enlace, $insertardatos2);
+
+    if(!$ejecutarinsertar2){
+        echo"no se subieron los datos";
+    }
+}
+
+?> 
+
+<!--php de idioma-->
+<?php	
+    if(isset($_POST['guardar'])){
+        $nativo=$_POST['nativo'];
+        $idioma=$_POST['idioma'];
+        $objetivo=$_POST['objetivo'];
+        
+
+
+    $insertardatos3 = "INSERT INTO idioma (nativo, idioma,objetivo) VALUES('$nativo',
+     '$idioma', '$objetivo')";
+    
+
+    $ejecutarinsertar3 = mysqli_query($enlace, $insertardatos3);
+
+    if(!$ejecutarinsertar3){
+        echo"no se subieron los datos";
+    }
+}
+
+?> 
+
+
+<!--php de idioma-->
+<?php	
+    if(isset($_POST['guardar'])){
+        $tipo=$_POST['tipo'];
+        $turno=$_POST['turno'];
+        $curso=$_POST['curso'];
+        
+
+
+    $insertardatos4 = "INSERT INTO modalidad (tipo, turno,curso) VALUES('$tipo',
+     '$turno', '$curso')";
+    
+
+    $ejecutarinsertar4 = mysqli_query($enlace, $insertardatos4);
+
+    if(!$ejecutarinsertar4){
+        echo"no se subieron los datos";
+    }
+}
+
+?>
+

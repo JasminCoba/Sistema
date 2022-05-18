@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body1 {
+    background-color: #0071bc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+.enca {
+    background: rgba(123, 98, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+}
+
+.formulario {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.google-maps {
+    position: relative;
+    padding-top: 40%;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    padding-top: 70px;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.margen {
+    border: black 2px solid;
+    margin-top: 20px;
+    background-color: white;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medio {
+    width: 70%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulos {
+    text-shadow: 5px 5px 3px black;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-style: italic;
+    font-family: arial Narrow;
+    font-size: 4rem;
+}
+
+.titu {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+    font-style: italic;
+    font-family: arial Narrow;
+    font-size: 300%;
+}
+
+.subtitulos {
+    text-shadow: 3px 5px 3px black;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-style: italic;
+    font-family: arial Narrow;
+    font-size: 1.3rem;
+}
+
+.celda {
+    border-collapse: collapse;
+    align-items: fixed;
+    width: 14.28%;
+}
+
+.borde {
+    border-collapse: collapse;
+    border: white 4px solid;
+    align-items: left;
+    width: 15%;
+}
+
+.tabla {
+    height: 186px;
+    width: 100%;
+}
+
+.fila {
+    height: 30%;
+    width: 100%;
+}
+
+.celda2 {
+    border-collapse: collapse;
+    border: white 2px solid;
+    align-items: center;
+    width: 15%;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    color: white;
+    font-size: 50px;
+    font-family: Berlin Sans FB;
+    line-height: 70px;
+    float: left;
+}
+
+nav {
+    line-height: 70px;
+    float: right;
+}
+
+nav a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    padding: 20px 10px;
+    line-height: normal;
+    font-size: 16px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+nav a:hover {
+    color: aqua;
+    border-bottom: 5px solid aqua;
+}
+
+@media only screen and (min-width:400px) and (max-width:767px) {
+    .enca {
+        height: 70px;
+    }
+    .logo {
+        font-size: 30px;
+        margin-left: 130px;
+        margin-top: -15px;
+    }
+    nav {
+        margin-top: -40px;
+        transform: translateX(-3%)
+    }
+}
+
+.contenedor {
+    margin: auto;
+    margin-top: 50px;
+    width: 20%;
+    height: 100%;
+}
+
+.imagen {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0 !important;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*aqui acaba mi css*/
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/*walter css*/
+
+h2 {
+    text-align: center;
+}
+
+.estilo_imagen {
+    width: 180px;
+    height: 180px;
+    border-radius: 20%;
+}
+
+.fondo_de_maestros {
+    background-color: rgb(12, 116, 235)
+}
+
+.page-section {
+    padding: 6rem 0;
+}
+
+.page-section .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+    .page-section .page-section-heading {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+    color: #2c3e50 !important;
+    font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: #fff;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+    color: #fff !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1rem);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.125rem solid #ced4da;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pies {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background: #2c3e50;
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+
+/*aqui acaba mi css*/
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.masthead {
+    margin-top: 90px;
+    padding-bottom: 6rem;
+}
+
+.masthead .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+}
+
+.masthead .masthead-subheading {
+    font-size: 1.25rem;
+}
+
+.masthead .masthead-avatar {
+    width: 16rem;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        margin-top: 100px;
+        padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*divide*/
+
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+    color: #2c3e50 !important;
+    font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: #fff;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+    color: #fff !important;
+}
+
+
+/*fin divide*/
