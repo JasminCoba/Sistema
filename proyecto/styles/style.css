@@ -5,21 +5,47 @@
 }
 
 .body1 {
-    background-color: #0071bc;
+    background-color: #E0DDAA;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw 100vh;
 }
 
+.center {
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.centrados {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.pie {
+    background: #2C3333;
+    overflow: hidden;
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 0;
+}
+
 .enca {
-    background: rgba(123, 98, 0, 0.5);
+    background: #2C3333;
     overflow: hidden;
     width: 100%;
     margin-bottom: 20px;
     top: 0;
     left: 0;
-    z-index: 100;
-    position: fixed;
+    display: block;
 }
 
 .formulario {
@@ -340,8 +366,6 @@ h2 {
 
 
 /*-----------------------------------------------------------------------------------------------------*/
-
-
 
 
 /*-----------------------------------------------------------------------------------------------------*/

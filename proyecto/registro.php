@@ -35,7 +35,9 @@
 
             <nav>
                 <a href="index.php">Horario</a>
-                <a href="reservar.php">Reservar laboratorio</a>
+
+                <a href="reservar.php">Recepcion del laboratorio</a>
+                <a href="registro.php">Registro</a>
                 <a href="solicitud.php">Solicitud de reservaciones</a>
                 <a href="inicio.php">Iniciar sesion</a>
             </nav>
