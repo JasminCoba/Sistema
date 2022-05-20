@@ -41,7 +41,7 @@
             </nav>
         </div>
     </header>
-    <section class="form-login">
+    <section class="form-login-reserva">
         <h5>Reservar laboratorio</h5>
         <form action="" >
             <input class="controls" type="text" name="nombre" placeholder="Nombre">
