@@ -36,7 +36,7 @@
                 <a href="index.php">Horario</a>
                 <a href="reservar.php">Reservar laboratorio</a>
                 <a href="solicitud.php">Solicitud de reservaciones</a>
-                <a href="inicio.php">Cerrar sesión</a>
+                <a href="login.php">Cerrar sesión</a>
             </nav>
         </div>
     </header>
